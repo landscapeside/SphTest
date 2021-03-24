@@ -46,6 +46,18 @@ android {
   kotlinOptions {
     jvmTarget = '1.8'
   }
+
+  testOptions {
+    unitTests.all {
+      jvmArgs '-noverify'
+    }
+    unitTests.includeAndroidResources = true
+    unitTests.returnDefaultValues = true
+  }
+
+//  useLibrary 'android.test.runner'
+  useLibrary 'android.test.base'
+  useLibrary 'android.test.mock'
 }
 
 dependencies {
@@ -61,7 +73,6 @@ dependencies {
   testImplementation rootProject.ext.junit
   testImplementation rootProject.ext.robolectric
   testImplementation rootProject.ext.androidXTest
-  testImplementation rootProject.ext.androidXjunit
   testImplementation rootProject.ext.androidXtruth
   testImplementation rootProject.ext.archTesting
   testImplementation rootProject.ext.mockitoInline
@@ -70,13 +81,15 @@ dependencies {
   androidTestImplementation rootProject.ext.junit
   androidTestImplementation rootProject.ext.mockito
   androidTestImplementation rootProject.ext.androidXTest
-  androidTestImplementation rootProject.ext.androidXjunit
   androidTestImplementation rootProject.ext.androidXtruth
   androidTestImplementation rootProject.ext.archTesting
   androidTestImplementation rootProject.ext.truth
   androidTestImplementation rootProject.ext.testRunner
   androidTestImplementation rootProject.ext.testRules
+  androidTestImplementation rootProject.ext.mockKAnd
   androidTestImplementation rootProject.ext.espresso
+  androidTestImplementation rootProject.ext.contrib
+  androidTestImplementation rootProject.ext.idlingResource
 
   implementation rootProject.ext.landSupport
   implementation(rootProject.ext.shadowState) {

@@ -11,7 +11,7 @@ import retrofit2.Retrofit
 import timber.log.Timber
 import javax.inject.Inject
 
-class TestApp : DaggerApplication() {
+open class TestApp : DaggerApplication() {
 
     @Inject
     lateinit var rxErrHandler: RxErrHandler
@@ -38,5 +38,9 @@ class TestApp : DaggerApplication() {
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(base)
         MultiDex.install(this)
+    }
+
+    companion object {
+        var runMode: RunMode = RunMode.ACTUAL
     }
 }

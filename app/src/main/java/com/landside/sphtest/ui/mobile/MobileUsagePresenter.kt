@@ -1,12 +1,13 @@
 package com.landside.sphtest.ui.mobile
 
 import com.landside.shadowstate_annotation.InjectAgent
+import com.landside.sphtest.repo.MobileUsageRepo
 import com.landside.sphtest.repo.impl.MobileUsageRepoImpl
 import com.landside.support.mvp.BasePresenterImpl
 import javax.inject.Inject
 
 class MobileUsagePresenter @Inject constructor(
-    val repo: MobileUsageRepoImpl
+    var repo: MobileUsageRepo
 ) : BasePresenterImpl<MobileUsageView>() {
 
     @InjectAgent
