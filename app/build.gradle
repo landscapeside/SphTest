@@ -25,6 +25,14 @@ android {
     javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
   }
 
+  dataBinding {
+    enabled = true
+  }
+
+  androidExtensions {
+    experimental = true
+  }
+
   buildTypes {
     release {
       minifyEnabled false
@@ -50,9 +58,25 @@ dependencies {
   api rootProject.ext.design
   api rootProject.ext.constraint
   implementation rootProject.ext.multidex
-  testImplementation 'junit:junit:4.+'
-  androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-  androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+  testImplementation rootProject.ext.junit
+  testImplementation rootProject.ext.robolectric
+  testImplementation rootProject.ext.androidXTest
+  testImplementation rootProject.ext.androidXjunit
+  testImplementation rootProject.ext.androidXtruth
+  testImplementation rootProject.ext.archTesting
+  testImplementation rootProject.ext.mockitoInline
+  testImplementation rootProject.ext.mockK
+  testImplementation rootProject.ext.truth
+  androidTestImplementation rootProject.ext.junit
+  androidTestImplementation rootProject.ext.mockito
+  androidTestImplementation rootProject.ext.androidXTest
+  androidTestImplementation rootProject.ext.androidXjunit
+  androidTestImplementation rootProject.ext.androidXtruth
+  androidTestImplementation rootProject.ext.archTesting
+  androidTestImplementation rootProject.ext.truth
+  androidTestImplementation rootProject.ext.testRunner
+  androidTestImplementation rootProject.ext.testRules
+  androidTestImplementation rootProject.ext.espresso
 
   implementation rootProject.ext.landSupport
   implementation(rootProject.ext.shadowState) {
@@ -96,4 +120,5 @@ dependencies {
   implementation(rootProject.ext.rehost) {
     exclude group: 'com.github.orhanobut', module: 'logger'
   }
+  implementation rootProject.ext.brv
 }

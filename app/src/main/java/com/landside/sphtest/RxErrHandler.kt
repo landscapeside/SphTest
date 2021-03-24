@@ -32,6 +32,8 @@ constructor(
             Timber.e(throwable)
           }
           else -> {
+            Toast.makeText(context, throwable.message, Toast.LENGTH_LONG)
+              .show()
             Timber.e(throwable)
           }
         }
