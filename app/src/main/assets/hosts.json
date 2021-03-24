@@ -1,0 +1,14 @@
+[
+  {
+    "name": "dev",
+    "urls": [
+      "http://114.55.127.90:8084/app/"
+    ]
+  },
+  {
+    "name": "release",
+    "urls": [
+      "https://app.chatm.com/"
+    ]
+  }
+]

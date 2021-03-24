@@ -1,0 +1,173 @@
+ext {
+
+    /**
+     * project version conf
+     * */
+    versionMajor = 1
+    versionMinor = 0
+    versionBuild = 0
+    versionPack = 1
+
+
+    compileSdkVersion = 29
+    buildToolsVersion = "29.0.0"
+    SupportVersion = "29.0.0"
+    minSdkVersion = 23
+    targetSdkVersion = 28
+
+    multidex = 'androidx.multidex:multidex:2.0.0'
+
+    androidXTest = 'androidx.test:core:1.0.0'
+    testRunner = 'androidx.test:runner:1.1.0'
+    testRules = 'androidx.test:rules:1.1.0'
+    androidXjunit = 'androidx.test.ext:junit:1.0.0'
+    androidXtruth = 'androidx.test.ext:truth:1.0.0'
+    truth = "com.google.truth:truth:1.0.1"
+    junit = 'junit:junit:4.12'
+    robolectric = 'org.robolectric:robolectric:4.3'
+    archTesting = "android.arch.core:core-testing:1.1.1"
+    mockito = 'org.mockito:mockito-core:3.4.0'
+    mockitoInline = 'org.mockito:mockito-inline:3.4.0'
+    mockK = "io.mockk:mockk:1.10.0"
+    espresso = 'androidx.test.espresso:espresso-core:3.1.0'
+
+    androidxVersion = '1.0.0'
+    androidxSupport = 'androidx.appcompat:appcompat:1.0.2'
+    constraint = [group: 'androidx.constraintlayout', name: 'constraintlayout', version: '1.1.2']
+    recyclerView = [group: 'androidx.recyclerview', name: 'recyclerview', version: androidxVersion]
+    appcompatV7 = "com.android.support:appcompat-v7:${SupportVersion}"
+    design = 'com.google.android.material:material:1.3.0-alpha03'
+    supportV4 = "com.android.support:support-v4:${SupportVersion}"
+    cardView = [group: 'androidx.cardview', name: 'cardview', version: androidxVersion]
+    coroutinesCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3"
+    coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3"
+    lifecycleKtx = "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+
+    liveData = [group: 'androidx.lifecycle', name: 'lifecycle-livedata', version: '2.0.0']
+    liveDataRx = [group: 'androidx.lifecycle', name: 'lifecycle-reactivestreams', version: '2.0.0']
+    liveDataToRxJava = 'com.github.YvesCheung:LiveDataToRxJava:v1.1'
+    room = [group: 'androidx.room', name: 'room-runtime', version: '2.1.0-alpha06']
+    roomRxJava = [group: 'androidx.room', name: 'room-rxjava2', version: '2.1.0-alpha06']
+    roomCompiler = [group: 'androidx.room', name: 'room-compiler', version: '2.1.0-alpha06']
+
+    rxJava = 'io.reactivex.rxjava2:rxjava:2.1.13'
+    rxAndroid = 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    rxPermissions = 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:3.4.1"
+    retrofit = "com.squareup.retrofit2:retrofit:2.4.0"
+    retrofitAdapterRxJava = "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    retrofitAdapterCoroutines = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+    retrofitConverterMoshi = "com.squareup.retrofit2:converter-moshi:2.4.0"
+    retrofitConverterGson = "com.squareup.retrofit2:converter-gson:2.0.0-beta4"
+    moshiKotlin = "com.squareup.moshi:moshi-kotlin:1.9.2"
+
+    picasso = 'com.squareup.picasso:picasso:2.5.2'
+
+    daggerVersion = '2.16'
+    dagger = "com.google.dagger:dagger:${daggerVersion}"
+    daggerCompiler = "com.google.dagger:dagger-compiler:${daggerVersion}"
+    daggerAndroid = "com.google.dagger:dagger-android:${daggerVersion}"
+    daggerAndroidSupport = "com.google.dagger:dagger-android-support:${daggerVersion}"
+    daggerAndroidCompiler = "com.google.dagger:dagger-android-processor:${daggerVersion}"
+
+    guava = "com.google.guava:guava:23.0"
+
+    butterknife = 'com.jakewharton:butterknife:8.1.0'
+    butterknifeCompiler = 'com.jakewharton:butterknife-compiler:8.1.0'
+
+    timber = "com.jakewharton.timber:timber:4.7.1"
+    logger = 'com.orhanobut:logger:2.2.0'
+
+    gson = "com.google.code.gson:gson:2.6.2"
+
+    mockApi = 'com.github.landscapeside:MockNetApi:v2.1.3'
+
+    adapterHelper = 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    baseAdapterHelper = 'com.joanzapata.android:base-adapter-helper:1.1.11'
+
+    // UI weights
+    viewPagerIndicator = "com.github.JakeWharton:ViewPagerIndicator:2.4.1"
+    bgaBanner = 'cn.bingoogolapple:bga-banner:2.2.6@aar'
+    swipeLayout = "com.daimajia.swipelayout:library:1.2.0@aar"
+    bulletinview = 'com.github.landscapeside:BulletinView:0.0.1'
+    photoView = 'com.github.chrisbanes:PhotoView:2.3.0'
+    cardViewFix = 'com.github.bigmanLau:CardviewFix:1.0.3'
+    tagView = "com.github.landscapeside:AndroidTagView:1.1.9"
+    mpAndroidChart = 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    switchButton = 'com.github.zcweng:switch-button:0.0.3@aar'
+    zxing = "com.journeyapps:zxing-android-embedded:3.5.0"
+    zxingCore = "com.google.zxing:core:3.3.3"
+    bgaZxing = 'cn.bingoogolapple:bga-qrcode-zxing:1.3.7'
+    matisse = 'com.zhihu.android:matisse:0.5.3-beta3'
+    compressor = "id.zelory:compressor:3.0.0"
+
+    pandoraDebug = 'com.github.whataa:pandora:v2.0.3'
+    pandoraRelease = 'com.github.whataa:pandora-no-op:v2.0.3'
+
+    fabric = 'com.crashlytics.sdk.android:crashlytics:2.10.1@aar'
+
+    arouterApi = 'com.alibaba:arouter-api:1.5.0'
+    arouterCompiler = 'com.alibaba:arouter-compiler:1.2.2'
+
+    anko = "org.jetbrains.anko:anko:0.10.8"
+
+    walle = 'com.meituan.android.walle:library:1.1.6'
+
+    autodispose = [group: 'com.uber.autodispose', name: 'autodispose-android', version: '1.1.0']
+    autodispose_ktx = [group: 'com.uber.autodispose', name: 'autodispose-ktx', version: '1.1.0']
+    autodispose_android_ktx =
+        [group: 'com.uber.autodispose', name: 'autodispose-android-ktx', version: '1.1.0']
+    autodispose_archs_ktx =
+        [group: 'com.uber.autodispose', name: 'autodispose-android-archcomponents-ktx', version: '1.1.0']
+
+    // umeng
+    huaweiBasetb = 'com.umeng.umsdk:huawei-basetb:2.6.3.306'
+    huaweiPushtb = 'com.umeng.umsdk:huawei-pushtb:2.6.3.306'
+    huaweiUmengaccs = 'com.umeng.umsdk:huawei-umengaccs:1.2.4'
+    meizuPush = 'com.umeng.umsdk:meizu-push:3.8.7'
+    meizuUmengaccs = 'com.umeng.umsdk:meizu-umengaccs:1.1.1'
+    oppoPush = 'com.umeng.umsdk:oppo-push:2.0.2'
+    oppoUmengaccs = 'com.umeng.umsdk:oppo-umengaccs:1.0.6'
+    vivoPush = 'com.umeng.umsdk:vivo-push:2.3.5'
+    vivoUmengaccs = 'com.umeng.umsdk:vivo-umengaccs:1.1.0'
+    miPush = 'com.umeng.umsdk:xiaomi-push:3.7.0'
+    miUmengaccs = 'com.umeng.umsdk:xiaomi-umengaccs:1.1.4'
+
+    //zbj
+    loginsdkcore='com.zbj.sdk:login-sdk-core:1.1.8'
+    chuck='com.zbj.library:chuck-library:1.3.3'
+    chucknoop='com.zbj.library:chuck-library-no-op:1.3.1'
+    geetestsdk='com.zbj.sdk:geetest-sdk:3.5.7.4'
+    shareSDK = 'com.zbj.sdk:share-sdk:1.0.2'
+    framework = 'com.zbj.framework:framework:1.5.40'
+
+    // RxRouter
+    rxRouter = 'zlc.season:rxrouter:1.0.1'
+    rxRouterCompiler = 'zlc.season:rxrouter-compiler:1.0.1'
+
+    rxDownload = "com.github.ssseasonnn:RxDownload:1.0.9"
+    glide = 'com.github.bumptech.glide:glide:4.9.0'
+    glideCompiler = 'com.github.bumptech.glide:compiler:4.9.0'
+    
+    commonLangs = 'org.apache.commons:commons-lang3:3.7'
+
+    sliceRouter = "com.github.landscapeside.sliceRouter:slicerouter:latest.release"
+    sliceRouterCompiler = 'com.github.landscapeside.sliceRouter:slicerouter-compiler:latest.release'
+
+    shadowState = 'com.github.landscapeside.ShadowState:shadowstate:1.0.0'
+    shadowStateCompiler = 'com.github.landscapeside.ShadowState:shadowstate-compiler:1.0.0'
+
+    landSupport = 'com.github.landscapeside:support:0.0.2'
+
+    rehost = 'com.github.landscapeside:rehost:latest.release'
+
+    enhancedFloaty = 'com.github.hyb1996:EnhancedFloaty:0.31'
+
+    hotfix = 'com.aliyun.ams:alicloud-android-hotfix:3.2.14'
+
+    buglyUpgrade = "com.tencent.bugly:crashreport_upgrade:1.4.2"
+    buglyCrashNative = "com.tencent.bugly:nativecrashreport:3.7.5"
+    leakCanary = 'com.squareup.leakcanary:leakcanary-android:2.2'
+    xCrash = 'com.iqiyi.xcrash:xcrash-android-lib:3.0.0'
+}
